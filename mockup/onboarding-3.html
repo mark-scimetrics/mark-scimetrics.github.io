@@ -14,16 +14,34 @@
   <h2 class="onboarding-title">What condition do you prefer?</h2>
 
   <div class="choice-grid">
-    <a href="profile.html" class="choice-card">
+    <a href="profile.html" class="choice-card" data-choice="pristine">
 <img src="assets/images/pristine.jpg" alt="Pristine vintage">
       <p>Pristine vintage</p>
     </a>
 
-    <a href="profile.html" class="choice-card">
+    <a href="profile.html" class="choice-card" data-choice="patina">
 <img src="assets/images/patina.jpg" alt="Lived-in patina">
       <p>Lived-in patina</p>
     </a>
   </div>
+
+  <div class="transition-message" id="transitionMessage" style="display: none;">
+    <p>Great taste! I see you love mid-century minimal with lived-in patina.<br>
+    I'm finding <strong>12 pieces</strong> that match your vibe... ✨</p>
+  </div>
+
+  <script>
+    document.querySelectorAll('.choice-card').forEach(card => {
+      card.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('.choice-grid').style.display = 'none';
+        document.getElementById('transitionMessage').style.display = 'block';
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 1500);
+      });
+    });
+  </script>
 
 </body>
 </html>

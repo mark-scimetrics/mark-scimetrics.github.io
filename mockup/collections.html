@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Collections • Auction Discovery</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/interactions.js" defer></script>
 </head>
 <body class="collections-screen">
 
@@ -13,8 +14,14 @@
   </header>
 
   <section class="collections-header">
-    <h2>My Finds</h2>
+    <h2>My Finds <span class="item-count">(6 items)</span></h2>
     <p class="collections-subtitle">Saved items you love</p>
+    
+    <div class="filter-pills">
+      <button class="filter-pill active">All Items</button>
+      <button class="filter-pill">Ending Soon</button>
+      <button class="filter-pill">Under £200</button>
+    </div>
   </section>
 
   <div class="collections-grid">
