@@ -1,0 +1,324 @@
+/* ------------------------------------------------------
+   WARM & PLAYFUL MOBILE UI — FULL POLISHED STYLESHEET
+   Fixes:
+   - Logo far smaller on all pages
+   - Clean modern layout on every screen
+   - Consistent spacing, typography, shadows
+   - Proper onboarding/feed/item/chat/collections styling
+------------------------------------------------------ */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Inter", sans-serif;
+  background: #F2E7D5;
+  color: #3B3B3B;
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* GLOBAL LAYOUT */
+.top-nav {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: transparent;
+}
+
+.logo-small {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.btn-primary {
+  background: #F28A76;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-secondary {
+  background: white;
+  border: 1px solid #ddd;
+  color: #3B3B3B;
+}
+
+/* WELCOME */
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.logo-main {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+}
+
+.welcome-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ONBOARDING */
+.onboarding-screen {
+  padding: 20px;
+  text-align: center;
+}
+
+.onboarding-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 20px 0 30px;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 10px;
+}
+
+.choice-card {
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: #3B3B3B;
+}
+
+.choice-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+/* PROFILE SCREEN */
+.profile-screen {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.profile-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.moodboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.moodboard-grid img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* FEED */
+.feed-screen {
+  padding: 16px;
+}
+
+#card-stack {
+  position: relative;
+}
+
+.item-card {
+  background: white;
+  border-radius: 20px;
+  padding-bottom: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.item-image {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.item-info {
+  padding: 16px;
+}
+
+.item-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.item-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+/* ITEM PAGE */
+.item-screen {
+  padding-bottom: 60px;
+}
+
+.item-hero-img {
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.item-details {
+  padding: 20px;
+}
+
+.section-heading {
+  font-size: 1.2rem;
+  margin: 18px 0 8px;
+  font-weight: 600;
+}
+
+.detail-list,
+.number-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 12px;
+}
+
+.detail-list li,
+.number-list li {
+  margin-bottom: 4px;
+}
+
+/* CHAT */
+.chat-screen {
+  padding-bottom: 60px;
+}
+
+.chat-item-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.chat-item-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.chat-window {
+  padding: 16px;
+}
+
+.chat-bubble {
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  max-width: 80%;
+}
+
+.chat-bubble.ai {
+  background: white;
+  margin-right: auto;
+}
+
+.chat-bubble.user {
+  background: #F28A76;
+  color: white;
+  margin-left: auto;
+}
+
+.quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.quick-btn {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.chat-input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  background: #F2E7D5;
+  display: flex;
+  gap: 8px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.send-btn {
+  padding: 0 16px;
+  background: #F28A76;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+/* COLLECTIONS */
+.collections-header {
+  padding: 16px;
+  text-align: center;
+}
+
+.collections-grid {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.collection-item img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
