@@ -1,0 +1,6 @@
+# Block search engines from indexing the mockup directory
+User-agent: *
+Disallow: /mockup/
+
+# Allow indexing of the main site
+Allow: /
